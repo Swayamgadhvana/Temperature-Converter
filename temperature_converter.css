@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:monospace;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5 50%, #ACB6E5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box{
+    background-image: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.473);
+    padding: 30px 35px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: anime 0.8s ease-in-out;
+}
+#box h2{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+#div1, #div2, #div3{
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.324);
+    /* border-top: 1px solid rgba(0, 0, 0, 0.324); */
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    /* margin: 10px; */
+    text-align: center;
+}
+#D, #type{
+    width: 100%;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ca4f4f;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+input, select{
+    background-color: #74ebd5;
+    transition: all 0.3s ease;
+}
+option{
+    background-color: #74ebd5;
+    transition: all 3s ease-in-out;
+}
+.icon{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+h2{
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+#convert{
+    width: 100%;
+    margin: 10px;
+    padding: 14px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #839cdcbe 50%, #dcdfed 100%);
+    color: rgb(23, 12, 71);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+#convert:hover{
+    background-color: #4f8ce7;
+}
+#result{
+    width: 100%;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-top: 10px;
+    background-color: #74ebd5;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+@keyframes anime {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

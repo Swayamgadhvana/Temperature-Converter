@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="temperature_converter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="box">
+        <div class="icon">
+            <i class="fas fa-temperature-high"></i>
+        </div>
+            <h2>Temperature Converter</h2>
+    <main>
+        <div id="div1">
+            <p id="type2">Enter in Celsius:-</p>
+            <i class="fas fa-temperature-low"></i>
+            <input type="number" id="D" placeholder="Degree">
+        </div>
+        <div id="div2">Type:
+            <i class="fas fa-caret-down"></i>
+        <select name="type" id="type">
+
+        <option value="fahrenheit" >Fahrenheit</option>
+        <option value="celsius" >Celsius</option>
+</select>
+        </div>
+</main>
+    <div id="div3" >Result:
+    <i class="fas fa-check"></i>
+    <input type="textbox" id="result" placeholder="Result">
+    </div>
+
+    <button id="convert">Convert
+            <i class="fas fa-exchange-alt"></i>
+
+    </button>
+    </div>
+
+    <script src="temperature_converter.js"></script>
+</body>
+</html>
